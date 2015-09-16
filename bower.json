@@ -1,0 +1,30 @@
+{
+  "name": "carlosjms.github.io",
+  "version": "0.0.0",
+  "homepage": "https://github.com/carlosjms/carlosjms.github.io",
+  "authors": [
+    "carlojms <carlos.jms01@gmail.com>"
+  ],
+  "description": "Personal page",
+  "main": "index.html",
+  "keywords": [
+    "carlos",
+    "jose",
+    "web",
+    "developer",
+    "fortaleza",
+    "ceará"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "4.4.0"
+  }
+}
