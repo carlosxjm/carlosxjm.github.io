@@ -29,6 +29,21 @@ body,
 		color: #fff;
 		padding: 5px;
 		font-size: 18px;
+		position: relative;
+		&:after{
+			height: 50px;
+			width: 30px;
+			background: rgb(118, 172, 209);
+			position: absolute;
+			top: 0px;
+			left: -26px;
+			border-left: transparent;
+			border: 3px solid rgb(109, 160, 195);
+			border-left: transparent;
+			content: '';
+			transform: skew(-50deg);
+			z-index: -1;
+		}
 
 	}
 	.social-links{
