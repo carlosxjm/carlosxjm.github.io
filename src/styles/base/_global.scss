@@ -4,7 +4,7 @@ body,
 	margin: 0;
 	padding: 0;
 	width: 100%;
-	height: 100% - 80px;
+	height: 100%;
 }
 
 .content{
@@ -20,6 +20,26 @@ body,
 
 		}
 	}
+	h1{
+		margin: 0;
+	}
+	h2{
+		margin-top: 0;
+		background: rgb(129, 189, 230);
+		color: #fff;
+		padding: 5px;
+		font-size: 18px;
+
+	}
+	.social-links{
+		a{
+			text-decoration: none;
+			color: black;
+			i{
+				font-size: 25px;
+			}
+		}
+	}
 }
 
 footer{	
@@ -28,4 +48,7 @@ footer{
 	position: absolute;
 	bottom: 0;
 	@include size(100%, 80px);
+	p{
+		align-self: center;
+	}	
 }
