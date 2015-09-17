@@ -1,3 +1,8 @@
+html{
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -ms-font-smoothing: antialiased;
+}
 html,
 body,
 .content{
@@ -14,7 +19,7 @@ body,
 	justify-content: center;
 	align-items: center;
 	figure{
-		width: 250px;
+		width: 150px;
 		img{
 			width: 100%;
 
@@ -22,34 +27,51 @@ body,
 	}
 	h1{
 		margin: 0;
+		font-family: 'Courgette', cursive;
+		font-size: 1.5em;
+		color: #3a3e61;
+		@include tablet{font-size: 3em;}
+		@include desktop{font-size: 3em;}
 	}
 	h2{
-		margin-top: 0;
-		background: rgb(129, 189, 230);
-		color: #fff;
+		color: #000;
 		padding: 5px;
-		font-size: 18px;
-		position: relative;
-		&:after{
-			height: 50px;
-			width: 30px;
-			background: rgb(118, 172, 209);
-			position: absolute;
-			top: 0px;
-			left: -26px;
-			border-left: transparent;
-			border: 3px solid rgb(109, 160, 195);
-			border-left: transparent;
-			content: '';
-			transform: skew(-50deg);
-			z-index: -1;
-		}
+		font-family: 'Lobster', cursive;
+		font-size: 1.5em;
+		margin: 0 0 10px;
+		background: linear-gradient(2deg, #23acdf, #3a3e61, #dd2342);
+		background-size: 200% 200%;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		-webkit-text-fill-color: transparent;
+		-webkit-animation: gradTexts 10s ease infinite;
+		-moz-animation: gradTexts 10s ease infinite;
+		animation: gradTexts 10s ease infinite;
+		@include tablet{font-size: 3em;}
+		@include desktop{font-size: 3em;}
 
+
+	}
+	@-webkit-keyframes gradTexts {
+	    0%{background-position:0% 80%}
+	    50%{background-position:100% 50%}
+	    100%{background-position:0% 80%}
+	}
+	@-moz-keyframes gradTexts {
+	    0%{background-position:0% 80%}
+	    50%{background-position:100% 50%}
+	    100%{background-position:0% 80%}
+	}
+	@keyframes gradTexts {
+	    0%{background-position:0% 80%}
+	    50%{background-position:100% 50%}
+	    100%{background-position:0% 80%}
 	}
 	.social-links{
 		a{
 			text-decoration: none;
-			color: black;
+			color: #3a3e61;
+			margin: 0 15px;
 			i{
 				font-size: 25px;
 			}
@@ -57,7 +79,7 @@ body,
 	}
 }
 
-footer{	
+footer{
 	display: flex;
 	justify-content: center;
 	position: absolute;
@@ -65,5 +87,7 @@ footer{
 	@include size(100%, 80px);
 	p{
 		align-self: center;
-	}	
+		color: #3a3e61;
+		font-family: 'Verdana';
+	}
 }
