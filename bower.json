@@ -25,6 +25,7 @@
     "tests"
   ],
   "dependencies": {
-    "font-awesome": "4.4.0"
+    "font-awesome": "4.4.0",
+    "milligram": "~1.0.3"
   }
 }
