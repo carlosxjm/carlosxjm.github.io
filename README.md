@@ -1,4 +1,4 @@
 # carlosjms.github.io
 Personal page	
 
-[Link](https://carlosjms.github.io){:target="_blank"}
+<a href="https://carlosjms.github.io" target="_blank"> Click to view </a>
